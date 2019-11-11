@@ -1,0 +1,81 @@
+/* PADDING AND MARGIN */
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+/* HTML */
+html {
+    background-color: rgba(255, 255, 248, 0.966);
+}
+
+/* BODY */
+body {
+    /* widows: 100%; */
+}
+
+/* HEADER */
+header {
+    /* height: 4rem;
+    background-color: black; */
+
+}
+
+/* ASIDE */
+aside {
+    z-index: 1000;
+    position: fixed;
+    margin: 30vh 0 30vh 78vw;
+    text-decoration: none;
+    /* display: none; */
+}
+
+aside h1 {
+    padding: 0.5rem;
+    background: rgba(133, 130, 130, 0.808);
+    color: whitesmoke;
+    padding: 1rem;
+    text-align: center;
+}
+
+aside h1:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+    background: grey;
+}
+
+aside a {
+    text-decoration: none;
+    /* display: none; */
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #f1f1f1;
+}
+  
+
+.progress-container {
+    width: 100%;
+    height: 8px;
+    background: #ccc;
+}
+  
+
+.progress-bar {
+    height: 8px;
+    background: #4caf50;
+    width: 0%;
+}
+
+
+
+/* FOOTER */
+footer {
+
+}
+
