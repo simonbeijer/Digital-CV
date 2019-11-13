@@ -1,6 +1,6 @@
 /* MAIN */
 main {
-    
+    position: relative;
 }
 
 
@@ -16,6 +16,7 @@ main {
     justify-content: center;
     align-items: center;
     text-align: center;
+    position: relative;
 }
 
 .col-pic-text {
@@ -26,9 +27,66 @@ main {
 }
 
 
+.col-pic-div .startDiv {
+    border-radius: 10px 10px 0 0;
+    background: rgba(133, 130, 130, 0.808);
+    position: absolute;
+    z-index: 1000;
+    width: 118px;
+    height: 74px;
+    bottom: 0;
+    left: 85vw;
+    display: inline;
+}
+
+.col-pic-div .startDiv a {
+    display: block;
+}
+
+.col-pic-div .startDiv i {
+    color: white;
+    animation: 2s ease-in-out arrowBounce infinite;
+}
+
+.col-pic-div .h-menu {
+    background: black;
+    bottom: 0;
+    left: 80vw;
+    position: absolute;
+    width: 40px;
+    height: 45px;
+    margin-bottom: 0.5rem;
+}
+
+@keyframes arrowBounce {
+    0% {
+      padding-top: 0.2rem;
+    }
+    50% {
+        padding-top: 1.2rem;
+    }
+    100% {
+        padding-top: 0.2rem;
+    }
+}
+
+
+@keyframes arrowBounceMedia {
+    0% {
+      padding-top: 0.3rem;
+      padding-bottom: 2.2rem;
+    }
+    50% {
+        padding-top: 2.2rem;
+    }
+    100% {
+        padding-top: 0.3rem;
+    }
+}
+
 @keyframes nameDrop {
     0% {
-      transform: translateY(-400%);
+      transform: translateY(-390%);
     }
     100% {
       transform: translateY(0);
@@ -45,7 +103,14 @@ main {
 
 @keyframes borderSlide {
     0% {
-      transform: translateX(-400%);
+      transform: translateY(0%);
+    }
+    
+    40% {
+        transform: translateX(-300%);
+    }    
+    80% {
+        transform: translateX(20%);
     }
     100% {
         transform: translateX(0);
@@ -70,9 +135,6 @@ main {
     width: 100%;
 }
 
-.col-1-div {
-    grid-area: p;
-}
 
 .grid-col-2 {
     background-color: rgb(60, 141, 141);

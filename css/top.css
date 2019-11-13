@@ -5,9 +5,11 @@
     scroll-behavior: smooth;
 }
 
+
 /* HTML */
 html {
     background-color: rgba(255, 255, 248, 0.966);
+    font-family: 'Nunito', sans-serif;
 }
 
 /* BODY */
@@ -22,32 +24,60 @@ header {
 
 }
 
-/* ASIDE */
-aside {
+/* NAV */
+
+/* MEDIA-BUTTON*/
+.media-button {
+    display: none;
+    background: black;
+    position: relative;
+    height: 60px;
+    width: 100%;
+}
+
+.media-button button {
+    /* position: absolute;
+    color: whitesmoke;*/
+    background-color: white;
+    width: 2rem;
+    height: 2rem;
+}
+
+
+/* SIDEBAR */
+.sidebar {
     z-index: 1000;
     position: fixed;
-    margin: 30vh 0 30vh 78vw;
+    margin: 30vh 0 30vh 85vw;
     text-decoration: none;
-    /* display: none; */
+    margin-top: 101vh;
 }
 
-aside h1 {
-    padding: 0.5rem;
-    background: rgba(133, 130, 130, 0.808);
-    color: whitesmoke;
-    padding: 1rem;
+.sidebar div .nav-5 a {
+    border-radius: 0 0 10px 10px;
+}
+
+.sidebar div li {
     text-align: center;
+    list-style-type: none;
+    display: inline;
 }
 
-aside h1:hover {
-    transform: scale(1.1);
-    opacity: 0.9;
-    background: grey;
-}
-
-aside a {
+.sidebar div a {
+    background: rgba(133, 130, 130, 0.808);
     text-decoration: none;
-    /* display: none; */
+    line-height: 2.6rem;
+    color: whitesmoke;
+    font-weight: 600;
+    padding: 1rem 1rem 1rem 1rem;
+    display: block;
+}
+
+
+.sidebar div a:hover {
+    /* transform: scale(1.01); */
+    opacity: 0.88;
+
 }
 
 .header {

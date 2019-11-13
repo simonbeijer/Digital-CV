@@ -5,30 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/8bcd668c2a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/top.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script defer src="js/main.js"></script>
     <title>Document</title>
 </head>
-<aside>
+<nav class="sidebar">
     <div>
-        <a href="#profile">
-            <h1 class="aside-1">Profile</h1>
-        </a>
-        <a href="#experiences">
-            <h1 class="aside-2">Experiences</h1>
-        </a>
-        <a href="#abilities">
-            <h1 class="aside-3">Abilities</h1>
-        </a>
-        <a href="#projects">
-            <h1 class="aside-4">Projects</h1>
-        </a>
-        <a href="#contact">
-            <h1 class="aside-5">Contact</h1>
-        </a>
+        <ul>
+            <li class="nav-1">
+                <a href="#profile">Profile</a>
+            </li>
+            <li class="nav-2">
+                <a href="#experiences">Experiences</a>
+            </li>
+            <li class="nav-3">
+                <a href="#abilities">Abilities</a>
+            </li>
+            <li class="nav-4">
+                <a href="#projects">Projects</a>
+            </li>
+            <li class="nav-5">
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
     </div>
-</aside>
+</nav>
 
 <body>
     <!-- <div class="header">
@@ -50,8 +57,20 @@
                 <div class="name-border"></div>
                 <h3>Digitalt CV</h3>
             </div>
+            <nav>
+                <div class="startDiv">
+                    <a href="#profile"><i class="fas fa-angle-down fa-3x"></i></a>
+                </div>
+            </nav>
         </div>
         <div class="grid-all display-grid"></div>
+        <nav class="media-button">
+            <div>
+                <button id="display-menu" onclick="displayMenuFunction()">
+                    <!-- <i class="fas fa-bars fa-3x"></i> -->
+                </button>
+            </div>
+        </nav>
         <div id="profile" class="grid-col-1 display-grid">
             <h1 class="col-1-div">Profile</h1>
         </div>
