@@ -5,11 +5,11 @@
         padding-bottom: 1rem;
     }
     .sidebar {
-        margin: 0;
-        position: absolute;
-        width: 100%;
         display: none;
-        line-height: 1rem;
+    }
+    .down-menu {
+        display: none;
+        width: 100%;
     }
     .col-pic-div .startDiv {
         bottom: 0;
@@ -19,12 +19,15 @@
     .media-button  {
         display: flex;
     }
-
+    
 } 
 
 @media screen and (min-width: 799px) {
     .col-pic-div .col-pic-text {
         transform: scale(1);
         transition-duration: 2s;
+    }
+    .down-menu {
+        display: none;
     }
 } 

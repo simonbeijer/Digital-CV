@@ -10,10 +10,11 @@
     <link rel="stylesheet" href="css/top.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
+    <link rel="icon" href="img/favicon1.ico" type="image/x-icon"/>
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script defer src="js/main.js"></script>
-    <title>Document</title>
+    <title>Simon Beijer CV</title>
 </head>
 <nav class="sidebar">
     <div>
@@ -36,20 +37,29 @@
         </ul>
     </div>
 </nav>
+<nav class="down-menu">
+    <div>
+        <ul>
+            <li class="nav-1">
+                <a href="#profile">Profile</a>
+            </li>
+            <li class="nav-2">
+                <a href="#experiences">Experiences</a>
+            </li>
+            <li class="nav-3">
+                <a href="#abilities">Abilities</a>
+            </li>
+            <li class="nav-4">
+                <a href="#projects">Projects</a>
+            </li>
+            <li class="nav-5">
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
 
 <body>
-    <!-- <div class="header">
-        <h2>Scroll Indicator</h2>
-        <div class="progress-container">
-            <div class="progress-bar" id="myBar"></div>
-        </div>
-    </div> -->
-    <!-- <header>
-        <div>
-        </div>
-    </header> -->
-
-
     <main>
         <div class="col-pic-div">
             <div class="col-pic-text">
@@ -66,13 +76,31 @@
         <div class="grid-all display-grid"></div>
         <nav class="media-button">
             <div>
-                <button id="display-menu" onclick="displayMenuFunction()">
-                    <!-- <i class="fas fa-bars fa-3x"></i> -->
+                <div class="progress-bar" id="bar"></div>
+                <button id="display-menu">
+                    <i class="fas fa-angle-down fa-3x"></i>
                 </button>
             </div>
         </nav>
-        <div id="profile" class="grid-col-1 display-grid">
-            <h1 class="col-1-div">Profile</h1>
+        <div id="profile" class="grid-col-1 display-grid grid-all">
+            <div class="col-1-div display-grid">
+                <h1>Profile</h1>
+                <h3>About</h3>
+                <p>
+                    Hi! Im a from-end web developer.
+                    My name is Simon I’m 29 year old.
+                    Right now studying att Medieinstitutet in Gothenburg.
+                    I also have 30 hp credit at Blekinge institute of Technology.
+                    Script and programming languages HTML5, CSS3, PHP, SQL, JavaScript, Node.js, LESS, SASS, XML and
+                    JSON.
+                    My subjects include object oriented programming, unit testing, api frameworks and UX.</p>
+                <h3>Details</h3>
+                <p>
+                    Name: Simon Beijer
+                    Age: 29
+                    Location: Gothenburg, Sweden, Earth
+                </p>
+            </div>
         </div>
         <div id="experiences" class="grid-col-2 display-grid">
             <h1 class="col-2-div">Experiences</h1>
