@@ -4,29 +4,43 @@
 window.addEventListener('load', onLoadFunctions)
 
 /**
- * 
- */
-function onLoadFunctions() {
-    resizedFunction();
-    scrolled();
-    createVariables();
-}
+ * gfxfdshddg
+ * @type {{ picDiv: HTMLDivElement }}
+ */ 
+const elements = {}
 
-window.addEventListener('resize', resizedFunction);
-window.addEventListener("scroll", scrolled);
-document.querySelector('.media-button').addEventListener('click', displayMenuFunction);
-
-/* width and height variables*/
 /**
  * 
  */
-function createVariables() {
-    let windowWidth = document.querySelector('.col-pic-div').offsetWidth;
-    let scrollTest = document.documentElement.scrollTop;
-    return scrollTest ,windowWidth;
+function onLoadFunctions() {
+    setupEventlistner();
+    fetchAndStoreElements();
+    resizedFunction();
+    scrolled();
+    calculateSidebar();
 }
 
+function fetchAndStoreElements() {
+    elements.picDiv = document.querySelector('.col-pic-div');
+    elements.scroll = document.documentElement.scrollTop;
+}
 
+function setupEventlistner() {
+    window.addEventListener('resize', resizedFunction);
+    window.addEventListener("scroll", scrolled);
+    document.querySelector('.media-button').addEventListener('click', displayMenuFunction);
+}
+
+/**
+ * 
+ */
+function getElementWidth(selector) {
+    return document.querySelector(selector).offsetWidth;
+}
+
+function getElementHeight(selector) {
+    return document.querySelector(selector).offsetHeight;
+}
 
 /* SCROLLFUNCTION */
 /**
@@ -35,7 +49,7 @@ function createVariables() {
 function scrolled() {
     console.log('SCROLLED');
 
-    let windowWidth = document.querySelector('.col-pic-div').offsetWidth;
+    let windowWidth = elements.picDiv.offsetWidth
     if (windowWidth <= 798) {
         downMenu();
         barFunction();
@@ -44,29 +58,23 @@ function scrolled() {
     }
 }
 
-
 /* RESIZEDFUNCTION */
-
 
 /**
  * 
  */
 function resizedFunction() {
     console.log('RESIZED');
-    let windowWidth = document.querySelector('.col-pic-div').offsetWidth;
+    let windowWidth = elements.picDiv.offsetWidth;
     if (windowWidth <= 798) {
         downMenu();
         barFunction()
     } if (windowWidth > 798) {
-        document.querySelector('.down-menu').style.display = "none";
         calculateSidebar();
     }
 }
 
 
-
-
-let clicked = false;
 
 /* DISPLAY MENU */
 
@@ -76,14 +84,12 @@ let clicked = false;
 function displayMenuFunction() {
 
     console.log("display-menu");
-    if (clicked === false) {
+    if (document.querySelector('.down-menu').style.display === "none") {
         document.querySelector('.down-menu').style.position = "fixed";
         document.querySelector('.down-menu').style.display = "flex";
-        clicked = true;
         console.log('clicked:', clicked)
-    } else if (clicked === true) {
+    } else {
         document.querySelector('.down-menu').style.display = "none";
-        clicked = false;
         console.log('clicked:', clicked)
     }
 
@@ -95,7 +101,8 @@ function displayMenuFunction() {
  * 
  */
 function downMenu() {
-    let scroll2 = $(this).scrollTop();
+    let scroll2 = document.documentElement.scrollTop;
+    // let scroll2 = $(this).scrollTop();
     console.log("test2");
     let colDivPic2 = document.querySelector('.col-pic-div').offsetHeight;
     let mediaButton = document.querySelector('.media-button').offsetHeight;
@@ -138,20 +145,18 @@ document.querySelector('.down-menu div').addEventListener("click", function () {
 
 /* SIDEBAR */
 
+
+
 /**
  * 
  */
 function calculateSidebar() {
-    let colDivPic = document.querySelector('.col-pic-div').offsetHeight;
-    let col1Div = document.querySelector('.grid-col-1').offsetHeight;
-    let col2Div = document.querySelector('.grid-col-2').offsetHeight;
-    let col3Div = document.querySelector('.grid-col-3').offsetHeight;
-    let col4Div = document.querySelector('.grid-col-4').offsetHeight;
-    let col5Div = document.querySelector('.grid-col-5').offsetHeight;
-
-    let scroll = $(this).scrollTop();
-    let scrollTest = document.body.scrollTop;
-    console.log('scrollTest:', scrollTest);
+    let colDivPicTest = document.querySelector('.col-pic-div').offsetHeight;
+    let colDivPic = elements.picDiv.offsetHeight;
+    console.log('colDivPic:', colDivPic);
+    console.log('colDivPicTest:', colDivPicTest);
+    // let scroll = $(this).scrollTop();
+    let scroll = document.documentElement.scrollTop;
     console.log('scroll:', scroll);
 
     let calculate = colDivPic - scroll;
@@ -166,7 +171,7 @@ function calculateSidebar() {
     }
 }
 
-
+$(this)
 /**
  * 
  */
@@ -178,10 +183,9 @@ function sidebarFunction() {
     let col4Div = document.querySelector('.grid-col-4').offsetHeight;
     let col5Div = document.querySelector('.grid-col-5').offsetHeight;
 
-    let scroll = $(this).scrollTop();
+    let scroll = document.documentElement.scrollTop;
+    // let scroll = $(this).scrollTop();
     console.log('scroll:', scroll);
-    let scrollTest = document.documentElement.scrollTop;
-    console.log('scrollTest:', scrollTest);
 
     let calculate = colDivPic - scroll;
 

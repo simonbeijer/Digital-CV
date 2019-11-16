@@ -1,0 +1,65 @@
+.col-pic-div .startDiv i {
+    animation: 2s ease-in-out arrowBounce infinite;
+}
+
+
+@keyframes arrowBounce {
+    0% {
+      padding-top: 0.2rem;
+    }
+    50% {
+        padding-top: 1.2rem;
+    }
+    100% {
+        padding-top: 0.2rem;
+    }
+}
+
+
+
+/* @keyframes arrowBounceMedia {
+    0% {
+      padding-top: 0.3rem;
+      padding-bottom: 2.2rem;
+    }
+    50% {
+        padding-top: 2.2rem;
+    }
+    100% {
+        padding-top: 0.3rem;
+    }
+} */
+
+.col-pic-text {
+    animation: 1.5s ease-in-out 0s 1 nameDrop;
+}
+
+@keyframes nameDrop {
+    0% {
+      transform: translateY(-390%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+
+.name-border {
+    animation: 1.5s ease-in-out 0s 1 borderSlide;
+}
+
+@keyframes borderSlide {
+    0% {
+      transform: translateY(0%);
+      margin-left: 40px
+    }
+    40% {
+        transform: translateX(-300%);
+    }    
+    80% {
+        transform: translateX(20%);
+        margin-left: 40px
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
