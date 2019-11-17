@@ -18,6 +18,7 @@ function onLoadFunctions() {
     resizedFunction();
     scrolled();
     calculateSidebar();
+    // updateTime();
 }
 
 function fetchAndStoreElements() {
@@ -171,7 +172,7 @@ function calculateSidebar() {
     }
 }
 
-$(this)
+
 /**
  * 
  */
@@ -254,3 +255,28 @@ function barFunction() {
 // instead of href?? //
 // var elmnt = document.getElementById("content");
 // elmnt.scrollIntoView();
+
+function addZero(i) {
+    if(i < 10) {
+    i = "0" + i
+    }
+    return i;
+}
+
+
+function updateTime() {
+    let date = new Date();
+    let hour = date.getHours();
+    let minute = date.getMinutes();
+    let second = date.getSeconds();
+
+    hour = addZero(hour);
+    minute = addZero(minute);
+    second = addZero(second);
+
+    document.querySelector(".time").innerText = hour + ":" + minute + ":" + second;
+    update = setTimeout(function() {updateTime()}, 500)
+    console.log("uppdaterat nu");
+}
+
+

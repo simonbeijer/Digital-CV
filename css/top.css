@@ -24,6 +24,16 @@ header {
 
 }
 
+/* TIME */
+
+.time {
+    position: sticky;
+    left: 90%;
+    bottom: 90%;
+    color: white;
+    font-size: 1.6rem;
+}
+
 /* NAV */
 
 /* MEDIA-BUTTON */

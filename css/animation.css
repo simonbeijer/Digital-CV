@@ -63,3 +63,16 @@
         transform: translateX(0);
     }
 }
+
+.time {
+    animation: 3s ease-in 0s 1 time;
+}
+
+@keyframes time {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

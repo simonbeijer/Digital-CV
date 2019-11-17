@@ -1,7 +1,7 @@
 @media screen and (max-width: 798px) {
     .col-pic-div .col-pic-text { 
         transform: scale(0.8);
-        transition-duration: 2s;
+        transition: 1.4s ease-in;
         padding-bottom: 1rem;
     }
     .sidebar {
@@ -19,13 +19,33 @@
     .media-button  {
         display: flex;
     }
-    
+    .col-1-div {
+        height: 100%;
+        display: grid;
+        grid-template-columns: 5% 20% 20% 20% 20% 15%;
+        grid-template-rows: 5% 15% 10% 60% 10%; 
+        grid-template-areas: 
+        ". . . . . ."
+        ". . . div1p . ."
+        ". div1h3a div1h3a img div1h3d div1h3d "
+        ". div1pa  div1pa img div1pd div1pd"
+        ". . . . . .";
+    }
+} 
+
+@media screen and (max-width: 650px) {
+    .col-pic-div .col-pic-text { 
+        transform: scale(0.6);
+        transition: 1.4s ease-in;
+        padding-bottom: 0.7rem;
+    } 
+
 } 
 
 @media screen and (min-width: 799px) {
     .col-pic-div .col-pic-text {
         transform: scale(1);
-        transition-duration: 2s;
+        transition: 1.4s ease-in;
     }
     .down-menu {
         display: none;
