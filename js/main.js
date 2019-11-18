@@ -18,7 +18,7 @@ function onLoadFunctions() {
     resizedFunction();
     scrolled();
     calculateSidebar();
-    // updateTime();
+    updateTime();
 }
 
 function fetchAndStoreElements() {
@@ -44,8 +44,11 @@ function getElementHeight(selector) {
 }
 
 /* SCROLLFUNCTION */
+
+
 /**
- * 
+ * This function checks if the page is scrolled and then redirect thru a if statment, to which menu (sidebar/dropdownmenu)
+ * is meant to be activ/showing.
  */
 function scrolled() {
     console.log('SCROLLED');
@@ -62,12 +65,14 @@ function scrolled() {
 /* RESIZEDFUNCTION */
 
 /**
- * 
+ * This function checks if the page is resized and then redirect thru a if statment, to which menu (sidebar/dropdownmenu)
+ * is meant to be activ/showing.
  */
 function resizedFunction() {
     console.log('RESIZED');
     let windowWidth = elements.picDiv.offsetWidth;
     if (windowWidth <= 798) {
+        document.querySelector('.down-menu').style.display === "none"
         downMenu();
         barFunction()
     } if (windowWidth > 798) {
@@ -79,19 +84,19 @@ function resizedFunction() {
 
 /* DISPLAY MENU */
 
+
 /**
- * 
+ * This function drops down a menu if, the if statment checks if the menu is displayed or not.
+ * Sets to fixed if its displayed
  */
 function displayMenuFunction() {
-
     console.log("display-menu");
     if (document.querySelector('.down-menu').style.display === "none") {
         document.querySelector('.down-menu').style.position = "fixed";
         document.querySelector('.down-menu').style.display = "flex";
-        console.log('clicked:', clicked)
-    } else {
+    } else if (document.querySelector('.down-menu').style.display === "flex") {
         document.querySelector('.down-menu').style.display = "none";
-        console.log('clicked:', clicked)
+        document.querySelector('.down-menu').style.height = "0px";
     }
 
 }
@@ -99,6 +104,8 @@ function displayMenuFunction() {
 /* DOWNMENU */
 
 /**
+ * This function calulates the height of the div over the menu to make it apper to be sticky.
+ * Then stickes to the page if the menu is under the first div.
  * 
  */
 function downMenu() {
@@ -148,15 +155,17 @@ document.querySelector('.down-menu div').addEventListener("click", function () {
 
 
 
+
+
 /**
- * 
+ * * This function calulates the height of the div over the sidebar to make it apper to be sticky.
+ * Then gets fixed to the page 30% from top and bottom.
  */
 function calculateSidebar() {
     let colDivPicTest = document.querySelector('.col-pic-div').offsetHeight;
     let colDivPic = elements.picDiv.offsetHeight;
     console.log('colDivPic:', colDivPic);
     console.log('colDivPicTest:', colDivPicTest);
-    // let scroll = $(this).scrollTop();
     let scroll = document.documentElement.scrollTop;
     console.log('scroll:', scroll);
 
@@ -174,6 +183,8 @@ function calculateSidebar() {
 
 
 /**
+ * This function calcuates where the page is viewed and the highlights that part the is viewed on the sidebar.
+ * The sidebar parts gets highlighted when the page is 30% over the underlying div, vice versa.
  * 
  */
 function sidebarFunction() {
@@ -185,7 +196,6 @@ function sidebarFunction() {
     let col5Div = document.querySelector('.grid-col-5').offsetHeight;
 
     let scroll = document.documentElement.scrollTop;
-    // let scroll = $(this).scrollTop();
     console.log('scroll:', scroll);
 
     let calculate = colDivPic - scroll;
@@ -228,12 +238,12 @@ function sidebarFunction() {
         document.querySelector(".nav-5 a").style.background = "grey";
     }
 
-    if (scroll > col1Div && clicked === false) {
+    if (scroll > col1Div) {
         document.querySelector(".media-button").style.position = "sticky";
         document.querySelector(".media-button").style.top = "0";
         console.log("funkar");
     }
-    if (scroll > col1Div && clicked === true) {
+    if (scroll > col1Div) {
         document.querySelector(".media-button").style.position = "sticky";
         document.querySelector(".media-button").style.top = "0";
         console.log("funkar");

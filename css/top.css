@@ -58,9 +58,9 @@ header {
     text-decoration: none;
     z-index: 1000;
     width: 100%;
-    position: fixed;
+    display: none;
 }
-
+    
 .down-menu div {
     width: 100%;
 }
@@ -72,7 +72,7 @@ header {
 }
 
 .down-menu div a {
-    background: rgba(133, 130, 130, 0.808);
+    background: rgb(100, 107, 105);
     text-decoration: none;
     line-height: 2.6rem;
     color: rgb(212, 203, 203);
@@ -115,6 +115,7 @@ header {
     margin: 30vh 0 30vh 85vw;
     text-decoration: none;
     margin-top: 100vh;
+    width: 118px;
 }
 
 .sidebar div .nav-5 a {
@@ -128,7 +129,7 @@ header {
 }
 
 .sidebar div a {
-    background: rgba(133, 130, 130, 0.808);
+    background: rgb(100, 107, 105);
     text-decoration: none;
     line-height: 2.6rem;
     color: whitesmoke;

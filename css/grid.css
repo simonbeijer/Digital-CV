@@ -25,7 +25,7 @@
     height: 120px;
     width: 120px;
 }
-.col-1-div h1:nth-child(1) {
+.col-1-div h2:nth-child(1) {
     grid-area: div1p;
     display: flex;
     justify-content: space-evenly;
@@ -85,7 +85,7 @@
     ". . . . .";
 }
 
-.col-2-div h1{
+.col-2-div h2 {
     grid-area: div2e;
     display: flex;
     justify-content: center;
@@ -112,69 +112,89 @@
     height: 100%;
     display: grid;
     grid-template-columns: 20% 60% 20%;
-    grid-template-rows: 10% 5% 5% 40% 5% 15% 5% 10% 5%; 
+    grid-template-rows: 5% 5% 5% 30% 5% 30% 5% 10% 5%; 
     grid-template-areas: 
     ". . ."
-    ". abil ."
-    ". skill ."
-    ". . ."
-    ". tool ."
-    ". . ."
-    ". lang ."
-    ". . ."
+    ". ab ."
+    ". sk ."
+    ". skd ."
+    ". to ."
+    ". tod ."
+    ". la ."
+    ". lad ."
     ". . .";
 }
 
-.col-3-div h1 {
-    grid-area: abil;
+.col-3-div h2 {
+    grid-area: ab;
     display: grid;
     align-items: center;
     justify-content: center;
 }
 
 .col-3-div h4:nth-child(2) {
-    grid-area: skill;
+    grid-area: sk;
     display: grid;
     align-items: center;
     justify-content: flex-start;
 }
 
 .col-3-div h4:nth-child(3) {
-    grid-area: tool;
+    grid-area: to;
     display: grid;
     align-items: center;
     justify-content: flex-start;
 }
 
 .col-3-div h4:nth-child(4) {
-    grid-area: lang;
+    grid-area: la;
     display: grid;
     align-items: center;
     justify-content: flex-start;
 }
 
+.col-3-div .skills {
+    grid-area: skd;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: flex-start;    
+}
+
+.col-3-div .tools {
+    grid-area: tod;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: flex-start;
+}
+
+.col-3-div .languages {
+    grid-area: lad;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: flex-start;
+}
 /* PROJECTS */
 
 .col-4-div {
     height: 100%;
     display: grid;
-    grid-template-columns: 20% 27% 6% 27% 20%;
-    grid-template-rows: 10% 10% 32.5% 5% 32.5% 10%; 
+    grid-template-columns: 20% 28% 4% 28% 20%;
+    grid-template-rows: 4% 5% 39% 5% 39% 4% 4% ; 
     grid-template-areas: 
     ". . . . ."
     ". . div4h1 . ."
     ". carl . design ."
-    ". links . . ."
+    ". clink . dlink ."
     ". game . web ."
+    ". glink . wlink ."
     ". . . . .";
 } 
 
-.col-4-div h1 {
+.col-4-div h2 {
     grid-area: div4h1;
-}
-.col-4-div .project-1 img {
-    height: 200px;
-    width: 320px;
 }
 
 .col-4-div .project-1 {
@@ -185,9 +205,32 @@
     align-items: center;
 }
 
-.col-4-div .project-2 img {
-    height: 200px;
-    width: 320px;
+.col-4-div .project-1-links {
+    grid-area: clink;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.col-4-div .project-2-links {
+    grid-area: dlink;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.col-4-div .project-3-links {
+    grid-area: glink;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.col-4-div .project-4-links {
+    grid-area: wlink;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .col-4-div .project-2 {
@@ -198,11 +241,6 @@
     align-items: center;
 }
 
-.col-4-div .project-3 img {
-    height: 200px;
-    width: 320px;
-}
-
 .col-4-div .project-3 {
     grid-area: game;
     display: flex;
@@ -211,9 +249,13 @@
     align-items: center;
 }
 
-.col-4-div .project-4 img {
-    height: 200px;
-    width: 320px;
+
+.col-4-div .project-4 {
+    grid-area: web;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .col-4-div .project-4 {
@@ -224,18 +266,7 @@
     align-items: center;
 }
 
-.col-4-div .project-4 img {
-    height: 200px;
-    width: 320px;
-}
-
-.col-4-div .project-4 {
-    grid-area: web;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
+/* CONTACT */
 
 .col-5-div {
     height: 100%;

@@ -14,3 +14,11 @@
     justify-content: start;
     align-items: center;
 }
+
+.skill-all {
+    height: 1.6rem;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

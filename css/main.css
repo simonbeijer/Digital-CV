@@ -27,10 +27,10 @@ main {
 
 .col-pic-div .startDiv {
     border-radius: 10px 10px 0 0;
-    background: rgba(133, 130, 130, 0.808);
+    background: rgb(100, 107, 105);
     position: absolute;
     z-index: 1000;
-    width: 126.5px;
+    width: 118px;
     height: 73px;
     bottom: 0;
     left: 85vw;
@@ -81,36 +81,113 @@ main {
 } */
 
 
+/* COLUMN 1 */
 
 .grid-col-1 {
-    background-color: rgb(248, 252, 252);
+    background-color: rgb(241, 241, 241);
     height: 40rem;
     width: 100%;
 }
 
+
+/* COLUMN 2 */
+
 .grid-col-2 {
-    background-color: rgb(60, 141, 141);
+    background-color: rgb(178, 195, 195);
     height: 40rem;
     width: 100%;
+}
+
+.grid-col-2 ul,li {
+    margin-bottom: 0.6rem;
     list-style-type: none;
 }
 
+
+/* COLUMN 3 */
 .grid-col-3 {
-    background-color: rgb(49, 92, 92);
-    height: 40rem;
+    background-color: rgb(161, 181, 166);
+    height: 60rem;
     width: 100%;
-
+    line-height: 1rem;
 }
 
+
+.col-3-div .html5 {
+    width: 100%;
+} 
+
+.col-3-div .css3 {
+    width: 100%;
+
+} 
+
+.col-3-div .php {
+    width: 80%;
+}
+
+.col-3-div .js {
+    width: 70%;
+} 
+
+.col-3-div .sql {
+    width: 70%;
+}
+
+.col-3-div .node {
+    width: 50%;
+}
+
+.col-3-div .workbench {
+    width: 50%;
+}
+
+.col-3-div .windows {
+    width: 100%;
+} 
+
+.col-3-div .mac {
+    width: 100%;
+} 
+
+.col-3-div .github {
+    width: 90%;
+}
+
+.col-3-div .atom {
+    width: 80%;
+}
+
+.col-3-div .vscode {
+    width: 70%;
+} 
+
+.col-3-div .xampp {
+    width: 80%;
+}
+
+.col-3-div .svenska {
+    width: 100%;
+} 
+
+.col-3-div .engelska {
+    width: 90%;
+}
+
+.col-3-div .spanska {
+    width: 30%;
+}
+
+/* COLUMN 4 */
 .grid-col-4 {
-    background-color: rgb(39, 65, 65);
+    background-color: rgb(152, 162, 157);
     height: 40rem;
     width: 100%;
 }
 
-
+/* COLUMN 5 */
 .grid-col-5 {
-    background-color: rgba(133, 130, 130, 0.808);
-    height: 40rem;
+    background-color: rgb(181, 181, 181);
+    height: 30rem;
     width: 100%;
 }
