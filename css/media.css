@@ -22,17 +22,18 @@
     .col-1-div {
         height: 100%;
         display: grid;
-        grid-template-columns: 10% 30% 20% 30% 10%;
-        grid-template-rows: 10% 20% 10% 50% 10%; 
+        grid-template-columns: 5% 35% 20% 35% 5%;
+        grid-template-rows: 5% 10% 5% 10% 65% 5%; 
         grid-template-areas: 
         ". . . . ."
         ". . div1p . ."
+        ". div1f div1f div1f ."
         ". div1h3a img div1h3d ."
         ".  div1pa img div1pd ."
         ". . . . .";
     }
     .col-2-div {
-        grid-template-columns: 5% 30% 30% 30% 5%;
+        grid-template-columns: 5% 35% 20% 35% 5%;
         grid-template-rows: 10% 10% 32.5% 5% 32.5% 10%; 
         /* grid-template-areas: 
         ". . . . ."
@@ -45,33 +46,31 @@
     .col-3-div {
         height: 100%;
         display: grid;
-        grid-template-columns: 5% 90% 5%;
+        grid-template-columns: 5% 35% 20% 35% 5%;
     }
     .grid-col-4 {
-        height: 90rem;
+        height: 80rem;
     }
     .col-4-div {
         height: 100%;
         display: grid;
-        grid-template-columns: 5% 90% 5%;
+        grid-template-columns: 5% 35% 20% 35% 5%;
         grid-template-rows: 6% 20% 3.5% 20% 3.5% 20% 3.5% 20% 3.5%; 
         grid-template-areas: 
- 
-        ". div4h1 ."
-        ". carl ."
-        ". dlink ."
-        ". design ."
-        ". clink ."
-        ". game ."
-        ". glink ."
-        ". web ."
-        ". wlink .";
+        ". . div4h1 . ."
+        ". carl carl carl ."
+        ". . dlink . ."
+        ". design design design ."
+        ". . clink . ."
+        ". game game game ."
+        ". . glink . ."
+        ". web web web ."
+        ". . wlink . .";
     }
     .col-4-div img {
         height: 100%;
         width: auto;
     }
-
 } 
 
 @media screen and (max-width: 599px) {
@@ -80,31 +79,54 @@
         transition: 1.4s ease-in;
         padding-bottom: 0.7rem;
     }
+    .col-pic-div {
+        background-image: url(../img/background-mobile.jpg);
+    }
+    .time {
+        display: none;
+    }
+    /* .col-4-div img {
+        height: auto;
+        width: 100%;
+    } */
+}
+@media screen and (max-width: 499px) {
+    .col-pic-div .col-pic-text { 
+        transform: scale(0.6);
+        transition: 1.4s ease-in;
+        padding-bottom: 0.7rem;
+    }
+    .time {
+        display: none;
+    }
+    .col-4-div img {
+        height: 100%;
+        width: auto;
+    }
+    /* .col-4-div {
+        grid-template-columns: 10% 80% 10%;
+    } */
+}
+
+@media screen and (max-width: 459px) {
+    .col-pic-div .col-pic-text { 
+        transform: scale(0.6);
+        transition: 1.4s ease-in;
+        padding-bottom: 0.7rem;
+    }
+    .time {
+        display: none;
+    }
     .col-4-div img {
         height: auto;
         width: 100%;
     }
-    .col-4-div {
-        height: 100%;
-        display: grid;
-        grid-template-columns: 15% 70% 15%;
-        grid-template-rows: 6% 20% 3.5% 20% 3.5% 20% 3.5% 20% 3.5%; 
-        grid-template-areas: 
- 
-        ". div4h1 ."
-        ". carl ."
-        ". dlink ."
-        ". design ."
-        ". clink ."
-        ". game ."
-        ". glink ."
-        ". web ."
-        ". wlink .";
-    }
+    /* .col-4-div {
+        grid-template-columns: 10% 80% 10%;
+    } */
+}
 
-} 
-
-@media screen and (min-width: 799px) {
+/* @media screen and (min-width: 799px) {
     .col-pic-div .col-pic-text {
         transform: scale(1);
         transition: 1.4s ease-in;
@@ -112,15 +134,10 @@
     .down-menu {
         display: none;
     }
-    .col-4-div img {
-        height: auto;
-        width: 100%;
-    }
-} 
+}  */
 
-@media screen and (min-width: 1200px) {
-    .col-4-div img {
-        height: auto;
-        width: 100%;
+@media screen and (max-width: 999px) {
+    .grid-col-2 {
+        height: 50rem;
     }
 } 

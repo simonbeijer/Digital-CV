@@ -6,10 +6,11 @@
     height: 100%;
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 10% 20% 10% 50% 10%; 
+    grid-template-rows: 5% 10% 5% 10% 60% 10%; 
     grid-template-areas: 
     ". . . . ."
     ". . div1p . ."
+    ". . div1f. ."
     ". div1h3a img div1h3d ."
     ".  div1pa img div1pd ."
     ". . . . .";
@@ -32,7 +33,7 @@
     align-items: flex-start;
 }
 .col-1-div h4 {
-    grid-area: div1p;
+    grid-area: div1f;
     align-items: flex-end;
     display: flex;
     justify-content: center;
@@ -43,6 +44,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border-bottom: solid grey 1px;
 }
 
 .col-1-div h3:nth-child(5) {
@@ -50,6 +52,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border-bottom: solid grey 1px;
 }
 
 .col-1-div .about-text {
@@ -65,8 +68,10 @@
     list-style-type: none;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 2rem;
+    line-height: 2rem;
 }
 
 /* EXPERIENCES */
@@ -111,18 +116,18 @@
 .col-3-div {
     height: 100%;
     display: grid;
-    grid-template-columns: 20% 60% 20%;
-    grid-template-rows: 5% 5% 5% 30% 5% 30% 5% 10% 5%; 
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 2.5% 10% 5% 30% 5% 30% 5% 10% 2.5%; 
     grid-template-areas: 
-    ". . ."
-    ". ab ."
-    ". sk ."
-    ". skd ."
-    ". to ."
-    ". tod ."
-    ". la ."
-    ". lad ."
-    ". . .";
+    ". . . . ."
+    ". . ab . ."
+    ". sk sk sk ."
+    ". skd skd skd ."
+    ". to to to ."
+    ". tod tod tod ."
+    ". la la la ."
+    ". lad lad lad ."
+    ". . . . .";
 }
 
 .col-3-div h2 {
@@ -130,6 +135,7 @@
     display: grid;
     align-items: center;
     justify-content: center;
+
 }
 
 .col-3-div h4:nth-child(2) {
@@ -182,7 +188,7 @@
     height: 100%;
     display: grid;
     grid-template-columns: 20% 28% 4% 28% 20%;
-    grid-template-rows: 4% 5% 39% 5% 39% 4% 4% ; 
+    grid-template-rows: 5% 10% 30% 10% 30% 10% 5%; 
     grid-template-areas: 
     ". . . . ."
     ". . div4h1 . ."
@@ -197,7 +203,7 @@
     grid-area: div4h1;
 }
 
-.col-4-div .project-1 {
+.col-4-div .project-1,.project-1-text {
     grid-area: carl;
     display: flex;
     justify-content: center;
@@ -212,10 +218,26 @@
     align-items: center;
 }
 
+
+.col-4-div .project-2,.project-2-text {
+    grid-area: design;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
 .col-4-div .project-2-links {
     grid-area: dlink;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+}
+.col-4-div .project-3,.project-3-text {
+    grid-area: game;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -226,46 +248,20 @@
     align-items: center;
 }
 
+.col-4-div .project-4,.project-4-text {
+    grid-area: web;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
 .col-4-div .project-4-links {
     grid-area: wlink;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
-
-.col-4-div .project-2 {
-    grid-area: design;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-.col-4-div .project-3 {
-    grid-area: game;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-.col-4-div .project-4 {
-    grid-area: web;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-.col-4-div .project-4 {
-    grid-area: web;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
 /* CONTACT */
 
 .col-5-div {

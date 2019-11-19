@@ -6,10 +6,10 @@ main {
 .col-pic-div {
     height: 100vh;
     max-height: 1200px;
-    background-image: url(../img/test.jpg);
+    background-image: url(../img/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
@@ -180,14 +180,36 @@ main {
 
 /* COLUMN 4 */
 .grid-col-4 {
-    background-color: rgb(152, 162, 157);
-    height: 40rem;
+    background-color: rgb(158, 169, 164);
+    height: 50rem;
     width: 100%;
+}
+
+.project-1-text,.project-2-text,.project-3-text, .project-4-text{
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+
+.project-1-text:hover,.project-2-text:hover,.project-3-text:hover, .project-4-text:hover {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+.grid-col-4 .project-1-text, .project-2-text, .project-3-text, .project-4-text p {
+    color: whitesmoke;
+}
+
+.grid-col-4 .project-1-links a, .project-2-links a, .project-3-links a, .project-4-links a {
+    color: whitesmoke;
 }
 
 /* COLUMN 5 */
 .grid-col-5 {
-    background-color: rgb(181, 181, 181);
+    background-color: rgb(191, 190, 190);
     height: 30rem;
+    width: 100%;
+}
+.col-4-div img {
+    height: auto;
     width: 100%;
 }
