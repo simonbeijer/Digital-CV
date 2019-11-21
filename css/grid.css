@@ -6,13 +6,15 @@
     height: 100%;
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 5% 10% 5% 10% 60% 10%; 
+    grid-template-rows: 5% 5% 5% 10% 10% 10% 50% 5%; 
     grid-template-areas: 
     ". . . . ."
     ". . div1p . ."
     ". . div1f. ."
+    ". . . . ."
     ". div1h3a img div1h3d ."
-    ".  div1pa img div1pd ."
+    ". div1h3a img div1h3d ."
+    ".  div1pa . div1pd ."
     ". . . . .";
 }
 
@@ -23,8 +25,12 @@
     justify-content: center;
 }
 .col-1-div .höna img {
-    height: 120px;
-    width: 120px;
+    height: auto;
+    width: 80%;
+}
+
+.col-1-div .profile-text {
+    text-align: center;
 }
 .col-1-div h2:nth-child(1) {
     grid-area: div1p;
@@ -334,6 +340,12 @@
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    text-decoration: none;
+    color: black;
+}
+
+.col-5-div a:hover {
+    opacity: 0.8;
 }
 .col-5-div p {
     display: flex;
@@ -376,3 +388,4 @@
     justify-content: center;
     text-align: center;
 }
+

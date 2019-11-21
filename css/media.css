@@ -22,15 +22,16 @@
     .col-1-div {
         height: 100%;
         display: grid;
-        grid-template-columns: 5% 35% 20% 35% 5%;
-        grid-template-rows: 5% 10% 5% 10% 65% 5%; 
+        grid-template-columns: 5% 15% 20% 20% 20% 15% 5%;
+        grid-template-rows: 5% 5% 5% 10% 10% 50% 10%; 
         grid-template-areas: 
-        ". . . . ."
-        ". . div1p . ."
-        ". div1f div1f div1f ."
-        ". div1h3a img div1h3d ."
-        ".  div1pa img div1pd ."
-        ". . . . .";
+        ". . . . . . ."
+        ". . div1p div1p div1p . ."
+        ". . div1f div1f div1f . ."
+        ". div1h3a div1h3a img div1h3d div1h3d ."
+        ". div1pa  div1pa img div1pd div1pd ."
+        ". div1pa  div1pa . div1pd div1pd ."
+        ". . . . . . .";
     }
     .col-1-div .details-icon i {
         font-size: 10rem;
@@ -113,7 +114,13 @@
         display: none;
     }
     .grid-col-1 {
-        height: 50rem;
+        height: 55rem;
+    }
+    .col-1-div .about-icon {
+        display: none;
+    }
+    .col-1-div .details-icon {
+        display: none;
     }
 
 }
@@ -146,6 +153,10 @@
         ". fatext fatext fatext ."
         ". cop cop cop .";
     }
+    .col-2-div {
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        grid-template-rows: 2% 5% 47% 5% 38% 2%; 
+    }
 }
 
 @media screen and (max-width: 459px) {
@@ -160,18 +171,11 @@
     }
 }
 
-/* @media screen and (min-width: 799px) {
-    .col-pic-div .col-pic-text {
-        transform: scale(1);
-        transition: 1.4s ease-in;
-    }
-    .down-menu {
-        display: none;
-    }
-}  */
 
-/* @media screen and (max-width: 999px) {
-    .grid-col-2 {
-        height: 50rem;
+
+@media screen and (min-width: 1500px) {
+    .col-4-div img {
+        height: 100%;
+        width: auto;
     }
-}  */
+}
