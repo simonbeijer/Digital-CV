@@ -47,7 +47,7 @@
     border-bottom: solid grey 1px;
 }
 
-.col-1-div h3:nth-child(5) {
+.col-1-div h3:nth-child(6) {
     grid-area: div1h3d;
     display: flex;
     justify-content: center;
@@ -70,9 +70,38 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding-top: 2rem;
     line-height: 2rem;
+    padding-top: 1.6rem;
 }
+
+.col-1-div .details-icon {
+    grid-area: div1pd;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-1-div .details-icon i {
+    font-size: 16rem;
+    opacity: 0.1;
+    color: rgb(175, 184, 169);
+}
+
+.col-1-div .about-icon {
+    grid-area: div1pa;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-1-div .about-icon i {
+    font-size: 16rem;
+    opacity: 0.1;
+    color: rgb(175, 184, 169);
+}
+
 
 /* EXPERIENCES */
 
@@ -102,6 +131,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    border-bottom: 1px solid grey;
 }
 
 .col-2-div .medieinstitutet {
@@ -109,6 +139,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    border-bottom: 1px solid grey;
 }
 
 /* ABILITES */
@@ -128,6 +159,11 @@
     ". la la la ."
     ". lad lad lad ."
     ". . . . .";
+}
+
+.col-3-div p {
+    padding-left: 0.5rem; 
+    padding-right: 0.5rem; 
 }
 
 .col-3-div h2 {
@@ -187,7 +223,7 @@
 .col-4-div {
     height: 100%;
     display: grid;
-    grid-template-columns: 20% 28% 4% 28% 20%;
+    grid-template-columns: 20% auto 4% auto 20%;
     grid-template-rows: 5% 10% 30% 10% 30% 10% 5%; 
     grid-template-areas: 
     ". . . . ."
@@ -201,6 +237,9 @@
 
 .col-4-div h2 {
     grid-area: div4h1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .col-4-div .project-1,.project-1-text {
@@ -268,24 +307,72 @@
     height: 100%;
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 20% 30% 30% 20%; 
+    grid-template-rows: 10% 15% 30% 25% 20%; 
     grid-template-areas: 
     ". . . . ."
     ". . cont . ."
-    ". . . . ."
-    ". . cop . .";
+    ". mail linked face . "
+    ". matext litext fatext ."
+    ". . cop  . .";
 }
 
-.col-5-div h1 {
+.col-5-div h2 {
     grid-area: cont;
-    display: grid;
-    align-items: flex-start;
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
 
 .col-5-div p {
     grid-area: cop;
-    display: grid;
+    display: flex;
     align-items: flex-start;
     justify-content: center;
+}
+
+.col-5-div a {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.col-5-div p {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.col-5-div a:nth-child(2) {
+    grid-area: mail;
+}
+
+.col-5-div p:nth-child(3) {
+    grid-area: matext;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.col-5-div a:nth-child(4) {
+    grid-area: linked;
+}
+
+.col-5-div p:nth-child(5) {
+    grid-area: litext;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.col-5-div a:nth-child(6) {
+    grid-area: face;
+}
+
+.col-5-div p:nth-child(7) {
+    grid-area: fatext;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }

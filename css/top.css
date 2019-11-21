@@ -39,18 +39,22 @@ header {
 /* MEDIA-BUTTON */
 .media-button {
     display: none;
-    background: black;
+    background: rgb(88, 90, 90);
     position: relative;
     height: 60px;
     width: 100%;
+    z-index: 1000;
 }
 
 .media-button button {
     /* position: absolute;
     color: whitesmoke;*/
     background-color: white;
+    background: rgb(88, 90, 90);
+    color: white;
     width: 2rem;
     height: 2rem;
+    z-index: 1000;
 }
 
 /* DOWNMENU */
@@ -72,7 +76,7 @@ header {
 }
 
 .down-menu div a {
-    background: rgb(100, 107, 105);
+    background: rgb(87, 88, 88);
     text-decoration: none;
     line-height: 2.6rem;
     color: rgb(212, 203, 203);
@@ -129,7 +133,7 @@ header {
 }
 
 .sidebar div a {
-    background: rgb(100, 107, 105);
+    background: rgb(87, 88, 88);
     text-decoration: none;
     line-height: 2.6rem;
     color: whitesmoke;

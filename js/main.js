@@ -201,9 +201,9 @@ function sidebarFunction() {
     let calculate = colDivPic - scroll;
 
     let calculate5 = colDivPic * 0.7;
-    let cutDiv = col1Div * 0.1;
+    let cutDiv = col1Div * 0.05;
 
-    let cutDiv2 = col1Div * 0.3;
+    let cutDiv2 = col1Div * 0.1;
 
     if (calculate) {
         document.querySelector(".sidebar").style.marginTop = calculate + "px";
@@ -212,30 +212,30 @@ function sidebarFunction() {
         document.querySelector(".sidebar").style.margin = "30vh 0 30vh 85vw";
     }
     if (scroll > 1) {
-        document.querySelector(".nav-1 a").style.background = "rgb(67, 68, 66)";
+        document.querySelector(".nav-1 a").style.background = "rgb(37, 39, 38)";
     } if (scroll > col1Div - cutDiv) {
-        document.querySelector(".nav-1 a").style.background = "rgb(114, 119, 118)";
-        document.querySelector(".nav-2 a").style.background = "rgb(67, 68, 66)";
+        document.querySelector(".nav-1 a").style.background = "rgb(88, 90, 90)";
+        document.querySelector(".nav-2 a").style.background = "rgb(37, 39, 38)";
     } if (scroll > col1Div + col2Div - cutDiv) {
-        document.querySelector(".nav-2 a").style.background = "rgb(114, 119, 118)";
-        document.querySelector(".nav-3 a").style.background = "rgb(67, 68, 66)";
+        document.querySelector(".nav-2 a").style.background = "rgb(88, 90, 90)";
+        document.querySelector(".nav-3 a").style.background = "rgb(37, 39, 38)";
     } if (scroll > col1Div + col2Div + col3Div - cutDiv) {
-        document.querySelector(".nav-3 a").style.background = "rgb(114, 119, 118)";
-        document.querySelector(".nav-4 a").style.background = "rgb(67, 68, 66)";
+        document.querySelector(".nav-3 a").style.background = "rgb(88, 90, 90)";
+        document.querySelector(".nav-4 a").style.background = "rgb(37, 39, 38)";
     } if (scroll > col1Div + col2Div + col3Div + col4Div - cutDiv) {
-        document.querySelector(".nav-4 a").style.background = "rgb(114, 119, 118)";
-        document.querySelector(".nav-5 a").style.background = "rgb(67, 68, 66)";
+        document.querySelector(".nav-4 a").style.background = "rgb(88, 90, 90)";
+        document.querySelector(".nav-5 a").style.background = "rgb(37, 39, 38)";
     }
     if (scroll < 1) {
-        document.querySelector(".nav-1 a").style.background = "rgb(67, 68, 66)";
+        document.querySelector(".nav-1 a").style.background = "rgb(37, 39, 38)";
     } if (scroll < col1Div - cutDiv) {
-        document.querySelector(".nav-2 a").style.background = "rgb(114, 119, 118)";
+        document.querySelector(".nav-2 a").style.background = "rgb(88, 90, 90)";
     } if (scroll < col1Div + col2Div - cutDiv) {
-        document.querySelector(".nav-3 a").style.background = "rgb(114, 119, 118)";
+        document.querySelector(".nav-3 a").style.background = "rgb(88, 90, 90)";
     } if (scroll < col1Div + col2Div + col3Div - cutDiv) {
-        document.querySelector(".nav-4 a").style.background = "rgb(114, 119, 118)";
-    } if (scroll < col1Div + col2Div + col3Div + col4Div - cutDiv2) {
-        document.querySelector(".nav-5 a").style.background = "rgb(114, 119, 118)";
+        document.querySelector(".nav-4 a").style.background = "rgb(88, 90, 90)";
+    } if (scroll < col1Div + col2Div + col3Div + col4Div - cutDiv) {
+        document.querySelector(".nav-5 a").style.background = "rgb(88, 90, 90)";
     }
 
     if (scroll > col1Div) {

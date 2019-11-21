@@ -85,10 +85,6 @@
     .time {
         display: none;
     }
-    /* .col-4-div img {
-        height: auto;
-        width: 100%;
-    } */
 }
 @media screen and (max-width: 499px) {
     .col-pic-div .col-pic-text { 
