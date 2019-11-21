@@ -43,6 +43,16 @@ function downMenu() {
     }
 }
 
+/* DOWNMENU CLICKED */
+
+/**
+ * Function that uses display none on the down-menu if it's clicked
+ */
+document.querySelector('.down-menu div').addEventListener("click", function () {
+    document.querySelector('.down-menu').style.display = "none";
+});
+
+
 /* SIDEBAR */
 
 /**
