@@ -7,15 +7,15 @@ window.addEventListener('load', onLoadFunctions)
 /**
  * Saving elements for other functions to use when to measureing.
  * Stored globally.
- * @type {{ picDiv: HTMLDivElement }} HTMLElement
+ * @type {{ picDiv: HTMLDivElement }} HTMLElement col-pic-div
  * @type {{ scroll: HTMLScrollHeight }} HTMLScrollHeight
- */ 
+ */
 const elements = {}
 
 /**
  * Function that get the width of the col-pic-div, to use in other functions.
- * @type {HTMLDivElement}
- * @returns {HTMLDivElement}
+ * @type {HTMLDivElement} Element col-pic-div
+ * @returns {HTMLDivElement} Element col-pic-div
  */
 function getElementWidth(selector) {
     return document.querySelector(selector).offsetWidth;
@@ -23,8 +23,8 @@ function getElementWidth(selector) {
 
 /**
  * Function that get the height of the scroll, to use in other functions.
- * @type {HTMLScrollHeight}
- * @returns {HTMLScrollHeight}
+ * @type {HTMLScrollHeight} HTMLScrollHeight
+ * @returns {HTMLScrollHeight} HTMLScrollHeight
  */
 function getElementHeight(selector) {
     return document.querySelector(selector).offsetHeight;
@@ -64,8 +64,6 @@ function setupEventlistner() {
     window.addEventListener("scroll", scrolled);
     document.querySelector('.media-button').addEventListener('click', displayMenuFunction);
 }
-
-
 
 /* SCROLLFUNCTION */
 

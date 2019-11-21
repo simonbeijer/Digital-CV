@@ -1,0 +1,167 @@
+/* GRID AREAS 4-5 */
+
+/* PROJECTS */
+
+.col-4-div {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 20% 28% 4% 28% 20%;
+    grid-template-rows: 5% 10% 30% 10% 30% 10% 5%; 
+    grid-template-areas: 
+    ". . . . ."
+    ". . div4h1 . ."
+    ". carl . design ."
+    ". clink . dlink ."
+    ". game . web ."
+    ". glink . wlink ."
+    ". . . . .";
+} 
+
+.col-4-div h2 {
+    grid-area: div4h1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-4-div .project-1,.project-1-text {
+    grid-area: carl;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.col-4-div .project-1-links {
+    grid-area: clink;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.col-4-div .project-2,.project-2-text {
+    grid-area: design;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.col-4-div .project-2-links {
+    grid-area: dlink;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.col-4-div .project-3,.project-3-text {
+    grid-area: game;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.col-4-div .project-3-links {
+    grid-area: glink;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.col-4-div .project-4,.project-4-text {
+    grid-area: web;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.col-4-div .project-4-links {
+    grid-area: wlink;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/* CONTACT */
+
+.col-5-div {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 10% 15% 30% 25% 20%; 
+    grid-template-areas: 
+    ". . . . ."
+    ". . cont . ."
+    ". mail linked face . "
+    ". matext litext fatext ."
+    ". cop cop cop .";
+}
+
+.col-5-div h2 {
+    grid-area: cont;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col-5-div p {
+    grid-area: cop;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.col-5-div a {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+}
+
+.col-5-div a:hover {
+    opacity: 0.8;
+}
+.col-5-div p {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.col-5-div a:nth-child(2) {
+    grid-area: mail;
+}
+
+.col-5-div p:nth-child(3) {
+    grid-area: matext;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.col-5-div a:nth-child(4) {
+    grid-area: linked;
+}
+
+.col-5-div p:nth-child(5) {
+    grid-area: litext;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.col-5-div a:nth-child(6) {
+    grid-area: face;
+}
+
+.col-5-div p:nth-child(7) {
+    grid-area: fatext;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+

@@ -14,23 +14,6 @@
     }
 }
 
-/* .down-menu {
-    animation: 3s ease-in-out 0s 1;
-} */
-
-/* @keyframes arrowBounceMedia {
-    0% {
-      padding-top: 0.3rem;
-      padding-bottom: 2.2rem;
-    }
-    50% {
-        padding-top: 2.2rem;
-    }
-    100% {
-        padding-top: 0.3rem;
-    }
-} */
-
 .col-pic-text {
     animation: 1.5s ease-in-out 0s 1 nameDrop;
 }

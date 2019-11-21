@@ -1,4 +1,3 @@
-
 /* DISPLAY MENU */
 
 /**
@@ -13,7 +12,6 @@ function displayMenuFunction() {
         document.querySelector('.down-menu').style.display = "none";
         document.querySelector('.down-menu').style.height = "0px";
     }
-
 }
 
 /* DOWNMENU */
@@ -45,7 +43,6 @@ function downMenu() {
     }
 }
 
-
 /* SIDEBAR */
 
 /**
@@ -66,7 +63,6 @@ function calculateSidebar() {
         document.querySelector(".sidebar").style.margin = "30vh 0 30vh 85vw";
     }
 }
-
 
 /**
  * This function calcuates where the page is viewed and the highlights that part the is viewed on the sidebar.
@@ -146,12 +142,12 @@ function barFunction() {
 
 /**
  * This function adda a zero if the number is under 10 before the number is showed.
- * @param {number} i 
- * @returns {number}
+ * @param {number} i number from updateTime
+ * @returns {number} number with added zero
  */
 function addZero(i) {
-    if(i < 10) {
-    i = "0" + i
+    if (i < 10) {
+        i = "0" + i
     }
     return i;
 }
@@ -171,6 +167,5 @@ function updateTime() {
     second = addZero(second);
 
     document.querySelector(".time").innerText = hour + ":" + minute + ":" + second;
-    update = setTimeout(function() {updateTime()}, 500)
-    console.log("uppdaterat nu");
+    update = setTimeout(function () { updateTime() }, 500)
 }
