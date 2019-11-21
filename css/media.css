@@ -32,6 +32,12 @@
         ".  div1pa img div1pd ."
         ". . . . .";
     }
+    .col-1-div .details-icon i {
+        font-size: 10rem;
+    }
+    .col-1-div .about-icon i {
+        font-size: 10rem;
+    }
     .col-2-div {
         grid-template-columns: 5% 35% 20% 35% 5%;
         grid-template-rows: 10% 10% 32.5% 5% 32.5% 10%; 
@@ -59,19 +65,40 @@
         grid-template-areas: 
         ". . div4h1 . ."
         ". carl carl carl ."
-        ". . dlink . ."
+        ". dlink dlink dlink ."
         ". design design design ."
-        ". . clink . ."
+        ". clink clink clink ."
         ". game game game ."
-        ". . glink . ."
+        ".glink glink glink ."
         ". web web web ."
-        ". . wlink . .";
+        ". wlink wlink wlink .";
     }
     .col-4-div img {
         height: 100%;
         width: auto;
     }
-} 
+    .col-5-div {
+        height: 100%;
+        display: grid;
+        grid-template-columns: 10% 25% 30% 25% 10%;
+        grid-template-rows: 10% 15% 30% 25% 20%; 
+        grid-template-areas: 
+        ". . . . ."
+        ". . cont . ."
+        ". mail linked face . "
+        ". matext litext fatext ."
+        ". . cop  . .";
+    }
+}
+
+@media screen and (max-width: 659px) {
+    .grid-col-2 {
+        height: 65rem;
+    }
+    .col-2-div {
+        grid-template-rows: 5% 5% 37.5% 5% 37.5% 10%; 
+    }
+}
 
 @media screen and (max-width: 599px) {
     .col-pic-div .col-pic-text { 
@@ -85,6 +112,10 @@
     .time {
         display: none;
     }
+    .grid-col-1 {
+        height: 50rem;
+    }
+
 }
 @media screen and (max-width: 499px) {
     .col-pic-div .col-pic-text { 
@@ -92,16 +123,29 @@
         transition: 1.4s ease-in;
         padding-bottom: 0.7rem;
     }
-    .time {
-        display: none;
-    }
     .col-4-div img {
         height: 100%;
         width: auto;
     }
-    /* .col-4-div {
-        grid-template-columns: 10% 80% 10%;
-    } */
+    .grid-col-5 {
+        height: 40rem;
+    }
+    .col-5-div {
+        height: 100%;
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        grid-template-rows: 5% 5% 20% 5% 20% 5% 20% 10% 10%; 
+        grid-template-areas: 
+        ". . . . ."
+        ". . cont . ."
+        ".  mail mail mail ."
+        ". matext matext matext ."
+        ".  linked linked linked  . "
+        ". litext litext litext ."
+        ".   face face face ."
+        ". fatext fatext fatext ."
+        ". cop cop cop .";
+    }
 }
 
 @media screen and (max-width: 459px) {
@@ -110,16 +154,10 @@
         transition: 1.4s ease-in;
         padding-bottom: 0.7rem;
     }
-    .time {
-        display: none;
-    }
     .col-4-div img {
         height: auto;
         width: 100%;
     }
-    /* .col-4-div {
-        grid-template-columns: 10% 80% 10%;
-    } */
 }
 
 /* @media screen and (min-width: 799px) {
@@ -132,8 +170,8 @@
     }
 }  */
 
-@media screen and (max-width: 999px) {
+/* @media screen and (max-width: 999px) {
     .grid-col-2 {
         height: 50rem;
     }
-} 
+}  */

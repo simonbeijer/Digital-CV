@@ -99,7 +99,7 @@ h2 {
 
 .grid-col-2 {
     background-color: rgb(178, 195, 195);
-    height: 50rem;
+    height: 55rem;
     width: 100%;
 }
 
@@ -122,7 +122,7 @@ h2 {
 /* COLUMN 3 */
 .grid-col-3 {
     background-color: rgb(161, 181, 166);
-    height: 60rem;
+    height: 65rem;
     width: 100%;
     line-height: 1rem;
 }
@@ -217,7 +217,7 @@ h2 {
 
 .project-1-text:hover,.project-2-text:hover,.project-3-text:hover, .project-4-text:hover {
     opacity: 1;
-    background-color: rgba(0, 0, 0, 0.5)
+    background-color: rgba(0, 0, 0, 0.7)
 }
 
 .grid-col-4 .project-1-text, .project-2-text, .project-3-text, .project-4-text p {
