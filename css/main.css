@@ -114,24 +114,39 @@ h2 {
 } 
 
 .col-3-div .css3 {
-    width: 100%;
+    width: 95%;
 
 } 
 
 .col-3-div .php {
-    width: 80%;
+    width: 60%;
 }
 
 .col-3-div .js {
-    width: 70%;
+    width: 80%;
 } 
 
 .col-3-div .sql {
+    width: 60%;
+}
+
+.col-3-div .react {
     width: 70%;
 }
 
 .col-3-div .node {
-    width: 50%;
+    width: 75%;
+}
+
+.col-3-div .material {
+    width: 65%;
+}
+
+.col-3-div .vue {
+    width: 45%;
+}
+.col-3-div .angular {
+    width: 40%;
 }
 
 .col-3-div .workbench {
@@ -151,15 +166,15 @@ h2 {
 }
 
 .col-3-div .atom {
-    width: 80%;
+    width: 70%;
 }
 
 .col-3-div .vscode {
-    width: 70%;
+    width: 80%;
 } 
 
 .col-3-div .xampp {
-    width: 80%;
+    width: 60%;
 }
 
 .col-3-div .svenska {
@@ -170,8 +185,8 @@ h2 {
     width: 90%;
 }
 
-.col-3-div .spanska {
-    width: 30%;
+.col-3-div .scrum {
+    width: 80%;
 }
 
 /* COLUMN 4 */
