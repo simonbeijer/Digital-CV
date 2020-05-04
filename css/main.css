@@ -196,7 +196,7 @@ h2 {
 /* COLUMN 4 */
 .grid-col-4 {
     background-color: rgb(158, 169, 164);
-    height: 50rem;
+    height: 70rem;
     width: 100%;
 }
 
@@ -209,21 +209,21 @@ h2 {
     opacity: 0.9;
 }
 
-.project-1-text,.project-2-text,.project-3-text, .project-4-text{
+.project-1-text,.project-2-text,.project-3-text, .project-4-text, .project-5-text, .project-6-text {
     opacity: 0;
     transition: 1s ease-in-out;
 }
 
-.project-1-text:hover,.project-2-text:hover,.project-3-text:hover, .project-4-text:hover {
+.project-1-text:hover,.project-2-text:hover,.project-3-text:hover, .project-4-text:hover, .project-5-text:hover, .project-6-text:hover  {
     opacity: 1;
     background-color: rgba(0, 0, 0, 0.7)
 }
 
-.grid-col-4 .project-1-text, .project-2-text, .project-3-text, .project-4-text p {
+.grid-col-4 .project-1-text, .project-2-text, .project-3-text, .project-4-text p, .project-5-text p, .project-6-text p {
     color: whitesmoke;
 }
 
-.grid-col-4 .project-1-links a, .project-2-links a, .project-3-links a, .project-4-links a {
+.grid-col-4 .project-1-links a, .project-2-links a, .project-3-links a, .project-4-links a, .project-5-links a , .project-6-links a  {
     color: whitesmoke;
 }
 

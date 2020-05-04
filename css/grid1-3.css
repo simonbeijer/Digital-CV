@@ -69,6 +69,11 @@
     align-items: flex-start;
 }
 
+.col-1-div p {
+    margin: 0;
+    padding: 0;
+}
+
 .col-1-div .profile-text {
     grid-area: div1pd;
     list-style-type: none;
