@@ -5,17 +5,17 @@
 .col-4-div {
     height: 100%;
     display: grid;
-    grid-template-columns: 20% 28% 4% 28% 20%;
-    grid-template-rows: 2% 2% 29% 2% 29% 2% 29% 2% 3%; 
+    grid-template-columns: 16% 32% 4% 32% 16%;
+    grid-template-rows: 5% 5% 25% 4% 25% 4% 25% 4% 3%; 
     grid-template-areas: 
     ". . . . ."
-    ". . div4h1 . ."
+    ". div4h1 div4h1 div4h1 ."
     ". carl . design ."
     ". clink . dlink ."
     ". game . web ."
     ". glink . wlink ."
-    ". fem . sex ."
-    ". femlink . sexlink ."
+    ". nasa . chat ."
+    ". nasalink . chatlink ."
     ". . . . .";
 } 
 
@@ -87,7 +87,7 @@
 }
 
 .col-4-div .project-5,.project-5-text {
-    grid-area: fem;
+    grid-area: nasa;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -95,14 +95,14 @@
 }
 
 .col-4-div .project-5-links {
-    grid-area: femlink;
+    grid-area: nasalink;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
 .col-4-div .project-6,.project-6-text {
-    grid-area: sex;
+    grid-area: chat;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -110,7 +110,7 @@
 }
 
 .col-4-div .project-6-links {
-    grid-area: sexlink;
+    grid-area: chatlink;
     display: flex;
     justify-content: space-evenly;
     align-items: center;

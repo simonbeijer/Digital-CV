@@ -48,15 +48,15 @@
         grid-template-columns: 5% 35% 20% 35% 5%;
     }
     .grid-col-4 {
-        height: 80rem;
+        height: 105rem;
     }
     .col-4-div {
         height: 100%;
         display: grid;
         grid-template-columns: 5% 35% 20% 35% 5%;
-        grid-template-rows: 6% 20% 3.5% 20% 3.5% 20% 3.5% 20% 3.5%; 
+        grid-template-rows: 4% 14% 2% 14% 2% 14% 2% 14% 2% 14% 2% 14% 2%; 
         grid-template-areas: 
-        ". . div4h1 . ."
+        ". div4h1 div4h1 div4h1 ."
         ". carl carl carl ."
         ". dlink dlink dlink ."
         ". design design design ."
@@ -64,7 +64,11 @@
         ". game game game ."
         ".glink glink glink ."
         ". web web web ."
-        ". wlink wlink wlink .";
+        ". wlink wlink wlink ."
+        ". nasa nasa nasa ."
+        ". nasalink nasalink nasalink ."
+        ". chat chat chat ."
+        ". chatlink chatlink chatlink .";
     }
     .col-4-div img {
         height: 100%;
